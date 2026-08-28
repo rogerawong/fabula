@@ -1,0 +1,107 @@
+===== ansible =====
+root                 /private/tmp/claude-501/-Users-rogerwong-Projects-TOC-fable/ef25bf27-c496-4563-8269-439cae137141/scratchpad/corpora/ansible/docs/docsite/rst
+.rst files           405
+carriers             46  (11.4% of files)
+toctree blocks       65
+toctree entries      478
+loose `.. toctree::` markers 65 vs 65 blocks scanned  (no gap)
+
+blocks per carrier
+  n  carriers   %
+   1        42   91.3
+   2         1    2.2
+   3         1    2.2
+   8         1    2.2
+  10         1    2.2
+  exactly one block: 42/46 = 91.3%
+
+the nav tail
+  tail-to-EOF (comments inert — PRIMARY)  33/46 = 71.7%
+  tail-to-EOF (strict, comments count as content)  33/46 = 71.7%
+  MID-FILE carriers (content after the last block)  13
+      trailing paragraph     8   bare text or a section heading
+      trailing directive     5   a rendering directive (.. seealso::, .. note::) — the reader sees it
+      trailing invisible     0   labels + substitution definitions only — nothing renders there
+  MID-FILE under the strict rule                   13
+  trailing-run length: 1×43 3×1 8×1 10×1
+
+MID-FILE FILE LIST (13)
+  command_guide/index.rst  [1 block, 5 content lines after last, directive]
+  community/collection_contributors/collection_integration_tests.rst  [1 block, 17 content lines after last, directive]
+  community/contributions_collections.rst  [1 block, 10 content lines after last, paragraph]
+  community/contributions.rst  [1 block, 12 content lines after last, paragraph]
+  community/getting_started.rst  [1 block, 11 content lines after last, paragraph]
+  community/maintainers.rst  [1 block, 3 content lines after last, paragraph]
+  dev_guide/developing_collections.rst  [3 blocks, 8 content lines after last, paragraph]
+  dev_guide/developing_core.rst  [1 block, 7 content lines after last, directive]
+  dev_guide/style_guide/index.rst  [1 block, 7 content lines after last, directive]
+  dev_guide/testing.rst  [1 block, 149 content lines after last, paragraph]
+  network/user_guide/platform_index.rst  [1 block, 78 content lines after last, paragraph]
+  os_guide/intro_windows.rst  [1 block, 107 content lines after last, paragraph]
+  plugins/plugins.rst  [1 block, 9 content lines after last, directive]
+STRICT-ONLY (a COMMENT, not prose, sits in or after the trailing run) (0)
+
+:glob: blocks 8 in 8 files
+  ansible_index.rst  [1 glob block]
+  collections/all_plugins.rst  [1 glob block]
+  porting_guides/core_porting_guides.rst  [1 glob block]
+  porting_guides/porting_guides.rst  [1 glob block]
+  roadmap/ansible_core_roadmap_index.rst  [1 glob block]
+  roadmap/ansible_roadmap_index.rst  [1 glob block]
+  roadmap/index.rst  [1 glob block]
+  roadmap/old_roadmap_index.rst  [1 glob block]
+
+multi-block carriers: 4; top 4 by block count
+  ansible_index.rst  ×10  (tail-to-EOF yes)
+      :caption: Ansible getting started   (2 entries)
+      :caption: Installation, Upgrade & Configuration   (2 entries)
+      :caption: Using Ansible   (8 entries)
+      :caption: Contributing to Ansible   (5 entries)
+      :caption: Extending Ansible   (1 entries)
+      :caption: Common Ansible Scenarios   (1 entries)
+      :caption: Network Automation   (3 entries)
+      :caption: Ansible Galaxy   (2 entries)
+      :caption: Reference & Appendices   (19 entries)
+      :caption: Roadmaps   (2 entries)
+  core_index.rst  ×8  (tail-to-EOF yes)
+      :caption: Ansible getting started   (1 entries)
+      :caption: Installation, Upgrade & Configuration   (2 entries)
+      :caption: Using Ansible Core   (8 entries)
+      :caption: Contributing to Ansible Core   (4 entries)
+      :caption: Extending Ansible   (1 entries)
+      :caption: Ansible Galaxy   (2 entries)
+      :caption: Reference & Appendices   (19 entries)
+      :caption: Roadmaps   (1 entries)
+  dev_guide/developing_collections.rst  ×3  (tail-to-EOF NO)
+      :caption: Developing new collections   (6 entries)
+      :caption: Working with existing collections   (3 entries)
+      :caption: Collections references   (2 entries)
+  dev_guide/testing/sanity/index.rst  ×2  (tail-to-EOF yes)
+      :caption: —   (33 entries)
+      :caption: —   (12 entries)
+
+option frequency across 65 blocks
+  :maxdepth:         65  100.0%
+  :numbered:          0    0.0%
+  :titlesonly:        0    0.0%
+  :hidden:            0    0.0%
+  :caption:          28   43.1%
+  :name:              0    0.0%
+  :glob:              8   12.3%
+  (no option outside the known list)
+  values seen:
+    :maxdepth: 2×38, 1×27
+    :caption: Ansible getting started×2, Installation, Upgrade & Configuration×2, Extending Ansible×2, Ansible Galaxy×2, Reference & Appendices×2, Roadmaps×2 (+16 more)
+    :glob: (flag)×8
+
+entry shapes across 478 entries
+  doc                405   84.7%
+  glob                73   15.3%
+  external             0    0.0%
+  self                 0    0.0%
+  explicitTitle        0    0.0%
+  withSuffix          16    3.3%
+  absolute             0    0.0%
+
+SUMMARY	corpus	files	carriers	carrier%	blocks	entries	1block%	tailEOF%	midfile	globBlocks
+SUMMARY	ansible	405	46	11.4	65	478	91.3	71.7	13	8

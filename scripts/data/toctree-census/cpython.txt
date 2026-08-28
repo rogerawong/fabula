@@ -1,0 +1,88 @@
+===== cpython =====
+root                 /private/tmp/claude-501/-Users-rogerwong-Projects-TOC-fable/ef25bf27-c496-4563-8269-439cae137141/scratchpad/corpora/cpython/Doc
+.rst files           557
+carriers             49  (8.8% of files)
+toctree blocks       61
+toctree entries      528
+loose `.. toctree::` markers 61 vs 61 blocks scanned  (no gap)
+
+blocks per carrier
+  n  carriers   %
+   1        44   89.8
+   2         3    6.1
+   4         1    2.0
+   7         1    2.0
+  exactly one block: 44/49 = 89.8%
+
+the nav tail
+  tail-to-EOF (comments inert — PRIMARY)  43/49 = 87.8%
+  tail-to-EOF (strict, comments count as content)  42/49 = 85.7%
+  MID-FILE carriers (content after the last block)  6
+      trailing paragraph     2   bare text or a section heading
+      trailing directive     4   a rendering directive (.. seealso::, .. note::) — the reader sees it
+      trailing invisible     0   labels + substitution definitions only — nothing renders there
+  MID-FILE under the strict rule                   7
+  trailing-run length: 1×48 4×1
+
+MID-FILE FILE LIST (6)
+  extending/index.rst  [1 block, 34 content lines after last, paragraph]
+  howto/index.rst  [1 block, 29 content lines after last, paragraph]
+  library/asyncio.rst  [4 blocks, 2 content lines after last, directive]
+  library/email.rst  [2 blocks, 10 content lines after last, directive]
+  library/filesys.rst  [1 block, 9 content lines after last, directive]
+  library/python.rst  [1 block, 3 content lines after last, directive]
+STRICT-ONLY (a COMMENT, not prose, sits in or after the trailing run) (1)
+  library/tk.rst
+
+:glob: blocks 0 in 0 files
+
+multi-block carriers: 5; top 5 by block count
+  c-api/concrete.rst  ×7  (tail-to-EOF yes)
+      :caption: —   (2 entries)
+      :caption: —   (4 entries)
+      :caption: —   (5 entries)
+      :caption: —   (2 entries)
+      :caption: —   (4 entries)
+      :caption: —   (15 entries)
+      :caption: —   (2 entries)
+  library/asyncio.rst  ×4  (tail-to-EOF NO)
+      :caption: High-level APIs   (7 entries)
+      :caption: Introspection APIs   (2 entries)
+      :caption: Low-level APIs   (5 entries)
+      :caption: Guides and Tutorials   (4 entries)
+  library/concurrency.rst  ×2  (tail-to-EOF yes)
+      :caption: —   (10 entries)
+      :caption: —   (1 entries)
+  library/email.rst  ×2  (tail-to-EOF NO)
+      :caption: —   (8 entries)
+      :caption: —   (7 entries)
+  whatsnew/index.rst  ×2  (tail-to-EOF yes)
+      :caption: —   (25 entries)
+      :caption: —   (1 entries)
+
+option frequency across 61 blocks
+  :maxdepth:         18   29.5%
+  :numbered:          3    4.9%
+  :titlesonly:        0    0.0%
+  :hidden:            2    3.3%
+  :caption:           4    6.6%
+  :name:              0    0.0%
+  :glob:              0    0.0%
+  (no option outside the known list)
+  values seen:
+    :maxdepth: 1×12, 2×6
+    :numbered: (flag)×3
+    :hidden: (flag)×2
+    :caption: High-level APIs×1, Introspection APIs×1, Low-level APIs×1, Guides and Tutorials×1
+
+entry shapes across 528 entries
+  doc                528  100.0%
+  glob                 0    0.0%
+  external             0    0.0%
+  self                 0    0.0%
+  explicitTitle        0    0.0%
+  withSuffix         528  100.0%
+  absolute             0    0.0%
+
+SUMMARY	corpus	files	carriers	carrier%	blocks	entries	1block%	tailEOF%	midfile	globBlocks
+SUMMARY	cpython	557	49	8.8	61	528	89.8	87.8	6	0

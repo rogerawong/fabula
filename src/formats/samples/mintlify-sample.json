@@ -1,0 +1,85 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Orbital Docs",
+  "colors": {
+    "primary": "#0D9373",
+    "light": "#07C983",
+    "dark": "#0A6E57"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Get started",
+            "root": "index",
+            "pages": [
+              "guides/install",
+              "guides/first-launch",
+              {
+                "group": "Configuration",
+                "pages": [
+                  "guides/config/files",
+                  "guides/config/environments",
+                  "guides/config/secrets"
+                ]
+              },
+              "guides/upgrading"
+            ]
+          },
+          {
+            "group": "Operate",
+            "icon": "gauge",
+            "pages": [
+              "operate/deploy",
+              "operate/scaling",
+              "operate/observability",
+              "operate/incidents"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API reference",
+        "groups": [
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api/launches",
+              "api/telemetry",
+              "api/webhooks"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Status",
+          "href": "https://status.example.com",
+          "icon": "signal"
+        }
+      ]
+    }
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Console",
+      "href": "https://console.example.com"
+    }
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/example/orbital"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+baseURL = "https://example.org"
+title = "Edges"
+theme = ["docsy"]
+contentDir = "content/en"
+disableAliases = true
+ignoreFiles = ["^OWNERS$", "README-.*\\.md$"]
+
+[languages]
+[languages.en]
+title = "Edges"
+languageName = "English"
+weight = 1
+[languages.de]
+title = "Kanten"
+languageName = "Deutsch"
+contentDir = "content/de"
+weight = 2

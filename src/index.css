@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens — day-one scaffolding per docs/05-interaction-and-ui.md.
+ * The radius scale is normative (docs/05). The 12-hue section
+ * palette lives in the model layer (it's data, assigned per-section);
+ * these tokens cover chrome/UI surfaces. Dark-mode variants are derived
+ * post-v1 from these same tokens.
+ */
+@theme {
+  --radius: 0.5rem;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+
+  --font-sans: "Inter Variable", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", "JetBrains Mono", ui-monospace, monospace;
+
+  /*
+   * Type ramp — a deliberate scale replacing the flat 10–16px set (the
+   * founding Impeccable finding: 1.6:1 with no role distinction, plus
+   * 10px chips under the legibility floor). Six roles, each a step the
+   * eye can tell apart; the FLOOR is 11px — nothing in the UI renders
+   * smaller, chips included (undersized-ui-text ×21, closed this pass).
+   */
+  --text-chrome: 11px; /* chips, counts, receipts, uppercase section heads */
+  --text-meta: 12px; /* secondary prose, mono paths, tooltip bodies */
+  --text-body: 13px; /* rows, buttons, panel lines — the working size */
+  --text-title: 15px; /* card titles, stat values */
+  --text-heading: 16px; /* dialog + app headings */
+  --text-display: 18px; /* empty-state welcome */
+
+  /*
+   * Warning token — the lock legend's ERROR tier (src/model/locks.ts:
+   * "does this mean something in the FILES should change?"). A mark in
+   * this color says the corpus needs fixing, so it must never be spent
+   * on app-state boundaries. amber-700: ≥4.5:1 on white, so it holds as
+   * text and as a 12px glyph alike.
+   */
+  --color-warning: #b45309;
+  /*
+   * Intent token — the aspirational badge (docs/21, docs/05 amendment
+   * 2026-08-19). A THIRD tone, authorized at gate 1 (R2), and it exists
+   * because the tier-membership test puts an aspirational move
+   * embarrassingly close to the error tier: it does mean something in
+   * the files should change. The two-sentence test splits them —
+   * "the warning token marks a FAULT in the corpus" / "the intent token
+   * marks a MOVE AWAITING YOUR HAND" — and painting an intention in the
+   * fault's tone would spend the error tier's jump.
+   *
+   * Measured: 7.10:1 on white, 6.35:1 on the darkest palette tint
+   * (badgeContrast.test.ts asserts both), and a different HUE from the
+   * warning amber rather than a different shade of it, so the two never
+   * read as severities of one thing.
+   */
+  --color-intent: #6d28d9;
+}
+
+body {
+  font-family: var(--font-sans);
+  overscroll-behavior: none;
+}
+
+/* Visible keyboard focus everywhere (docs/02 a11y floor). Mouse clicks
+   don't trigger :focus-visible, so pointer users see no rings. */
+:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 1px;
+  border-radius: 2px;
+}
+
+/* Removed-card ghost shells (docs/05 rule 3) */
+@keyframes ghost-fade {
+  from {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+}
+
+/* A focused subject, lit long enough to find and short enough to leave
+   (docs/17). An outline rather than a fill: the card border and the row
+   tones already carry meaning, and borrowing either would say something
+   about the node that focus does not mean. */
+[data-focus-flash="true"] {
+  animation: focus-flash 1.2s ease-out;
+  border-radius: 4px;
+}
+
+@keyframes focus-flash {
+  0% {
+    box-shadow: 0 0 0 3px #2563eb;
+  }
+  70% {
+    box-shadow: 0 0 0 3px #2563eb80;
+  }
+  100% {
+    box-shadow: 0 0 0 3px #2563eb00;
+  }
+}
+
+/* docs/05 rule 5: reduced motion collapses ALL animation to instant.
+   (WAAPI animations are additionally guarded in code.) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/*
+ * A drop the commit predicate refuses says so with the pointer (docs/14).
+ * `cursor` is inherited but any element declaring its own wins, and every
+ * topic row sets `cursor-grab` — so this has to reach descendants and
+ * outrank them, which is what earns the `!important`. The attribute is
+ * set only for the duration of a refused drag.
+ */
+body[data-drag-refused="true"],
+body[data-drag-refused="true"] * {
+  cursor: not-allowed !important;
+}

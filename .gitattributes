@@ -1,0 +1,9 @@
+src/collections/__tests__/fixtures/** -text
+# Format fixtures too: the Mintlify adapter asserts input identity
+# (serialize(parse(x)) === x), including trailing-newline state, so git
+# must not normalize these files on checkout.
+src/formats/__tests__/fixtures/** -text
+# The bundled Mintlify sample is held in canonical JSON.stringify form so
+# the e2e flow can assert export bytes against it; a CRLF checkout would
+# break that without changing a single visible character.
+src/formats/samples/** -text

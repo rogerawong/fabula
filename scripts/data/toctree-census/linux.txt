@@ -1,0 +1,217 @@
+===== linux =====
+root                 /private/tmp/claude-501/-Users-rogerwong-Projects-TOC-fable/ef25bf27-c496-4563-8269-439cae137141/scratchpad/corpora/linux/Documentation
+.rst files           3989
+carriers             417  (10.5% of files)
+toctree blocks       552
+toctree entries      3944
+loose `.. toctree::` markers 552 vs 552 blocks scanned  (no gap)
+
+blocks per carrier
+  n  carriers   %
+   1       369   88.5
+   2        18    4.3
+   3         8    1.9
+   4         6    1.4
+   5         9    2.2
+   6         3    0.7
+   8         2    0.5
+   9         1    0.2
+  11         1    0.2
+  exactly one block: 369/417 = 88.5%
+
+the nav tail
+  tail-to-EOF (comments inert — PRIMARY)  320/417 = 76.7%
+  tail-to-EOF (strict, comments count as content)  320/417 = 76.7%
+  MID-FILE carriers (content after the last block)  97
+      trailing paragraph    77   bare text or a section heading
+      trailing directive    18   a rendering directive (.. seealso::, .. note::) — the reader sees it
+      trailing invisible     2   labels + substitution definitions only — nothing renders there
+  MID-FILE under the strict rule                   97
+  trailing-run length: 1×416 5×1
+
+MID-FILE FILE LIST (97)
+  admin-guide/media/index.rst  [1 block, 11 content lines after last, paragraph]
+  arch/sh/index.rst  [1 block, 24 content lines after last, paragraph]
+  bpf/index.rst  [1 block, 1 content line after last, invisible]
+  bpf/libbpf/index.rst  [1 block, 6 content lines after last, paragraph]
+  bpf/maps.rst  [1 block, 39 content lines after last, paragraph]
+  bpf/programs.rst  [1 block, 2 content lines after last, paragraph]
+  bpf/standardization/index.rst  [1 block, 1 content line after last, invisible]
+  core-api/kho/index.rst  [1 block, 44 content lines after last, paragraph]
+  core-api/liveupdate.rst  [1 block, 25 content lines after last, paragraph]
+  cpu-freq/index.rst  [1 block, 13 content lines after last, paragraph]
+  dev-tools/kselftest.rst  [1 block, 277 content lines after last, paragraph]
+  dev-tools/kunit/api/index.rst  [1 block, 18 content lines after last, paragraph]
+  dev-tools/kunit/index.rst  [1 block, 67 content lines after last, paragraph]
+  driver-api/cxl/platform/acpi.rst  [1 block, 37 content lines after last, paragraph]
+  driver-api/gpio/index.rst  [1 block, 22 content lines after last, paragraph]
+  driver-api/media/index.rst  [1 block, 11 content lines after last, paragraph]
+  driver-api/pldmfw/index.rst  [1 block, 45 content lines after last, paragraph]
+  driver-api/surface_aggregator/client.rst  [1 block, 287 content lines after last, paragraph]
+  driver-api/surface_aggregator/internal.rst  [1 block, 424 content lines after last, paragraph]
+  hid/hidintro.rst  [1 block, 385 content lines after last, paragraph]
+  index.rst  [8 blocks, 3 content lines after last, paragraph]
+  mm/damon/design.rst  [1 block, 444 content lines after last, paragraph]
+  mm/damon/index.rst  [1 block, 7 content lines after last, paragraph]
+  mm/process_addrs.rst  [1 block, 725 content lines after last, paragraph]
+  process/debugging/index.rst  [2 blocks, 34 content lines after last, paragraph]
+  rust/index.rst  [1 block, 2 content lines after last, paragraph]
+  trace/index.rst  [6 blocks, 4 content lines after last, paragraph]
+  translations/index.rst  [1 block, 34 content lines after last, paragraph]
+  translations/it_IT/core-api/index.rst  [2 blocks, 4 content lines after last, directive]
+  translations/it_IT/doc-guide/index.rst  [1 block, 4 content lines after last, directive]
+  translations/it_IT/i2c/index.rst  [5 blocks, 4 content lines after last, directive]
+  translations/it_IT/index.rst  [3 blocks, 18 content lines after last, paragraph]
+  translations/it_IT/locking/index.rst  [1 block, 4 content lines after last, directive]
+  translations/it_IT/process/index.rst  [5 blocks, 4 content lines after last, directive]
+  translations/it_IT/RCU/index.rst  [1 block, 4 content lines after last, directive]
+  translations/ja_JP/index.rst  [1 block, 2 content lines after last, directive]
+  translations/ko_KR/index.rst  [1 block, 2 content lines after last, directive]
+  translations/zh_CN/accounting/index.rst  [1 block, 3 content lines after last, paragraph]
+  translations/zh_CN/admin-guide/index.rst  [3 blocks, 54 content lines after last, paragraph]
+  translations/zh_CN/admin-guide/mm/index.rst  [1 block, 15 content lines after last, paragraph]
+  translations/zh_CN/arch/index.rst  [1 block, 10 content lines after last, paragraph]
+  translations/zh_CN/arch/loongarch/index.rst  [1 block, 4 content lines after last, directive]
+  translations/zh_CN/arch/mips/index.rst  [1 block, 4 content lines after last, directive]
+  translations/zh_CN/arch/openrisc/index.rst  [1 block, 6 content lines after last, paragraph]
+  translations/zh_CN/arch/parisc/index.rst  [1 block, 6 content lines after last, paragraph]
+  translations/zh_CN/arch/riscv/index.rst  [1 block, 4 content lines after last, directive]
+  translations/zh_CN/block/index.rst  [1 block, 14 content lines after last, paragraph]
+  translations/zh_CN/core-api/index.rst  [5 blocks, 21 content lines after last, paragraph]
+  translations/zh_CN/cpu-freq/index.rst  [1 block, 14 content lines after last, paragraph]
+  translations/zh_CN/dev-tools/index.rst  [1 block, 9 content lines after last, paragraph]
+  translations/zh_CN/devicetree/index.rst  [3 blocks, 2 content lines after last, paragraph]
+  translations/zh_CN/doc-guide/index.rst  [1 block, 4 content lines after last, directive]
+  translations/zh_CN/driver-api/gpio/index.rst  [1 block, 29 content lines after last, paragraph]
+  translations/zh_CN/driver-api/index.rst  [1 block, 98 content lines after last, paragraph]
+  translations/zh_CN/driver-api/phy/index.rst  [1 block, 6 content lines after last, paragraph]
+  translations/zh_CN/index.rst  [9 blocks, 5 content lines after last, paragraph]
+  translations/zh_CN/infiniband/index.rst  [1 block, 4 content lines after last, directive]
+  translations/zh_CN/kbuild/index.rst  [1 block, 10 content lines after last, paragraph]
+  translations/zh_CN/kernel-hacking/index.rst  [1 block, 2 content lines after last, paragraph]
+  translations/zh_CN/locking/index.rst  [1 block, 20 content lines after last, paragraph]
+  translations/zh_CN/mm/index.rst  [2 blocks, 7 content lines after last, paragraph]
+  translations/zh_CN/networking/index.rst  [1 block, 121 content lines after last, paragraph]
+  translations/zh_CN/PCI/index.rst  [1 block, 5 content lines after last, paragraph]
+  translations/zh_CN/peci/index.rst  [1 block, 4 content lines after last, directive]
+  translations/zh_CN/power/index.rst  [1 block, 30 content lines after last, paragraph]
+  translations/zh_CN/process/index.rst  [4 blocks, 10 content lines after last, paragraph]
+  translations/zh_CN/rust/index.rst  [1 block, 1 content line after last, paragraph]
+  translations/zh_CN/scheduler/index.rst  [1 block, 8 content lines after last, paragraph]
+  translations/zh_CN/scsi/index.rst  [5 blocks, 34 content lines after last, paragraph]
+  translations/zh_CN/security/index.rst  [1 block, 5 content lines after last, paragraph]
+  translations/zh_CN/security/keys/index.rst  [1 block, 5 content lines after last, paragraph]
+  translations/zh_CN/sound/index.rst  [1 block, 4 content lines after last, directive]
+  translations/zh_CN/staging/index.rst  [1 block, 7 content lines after last, paragraph]
+  translations/zh_CN/subsystem-apis.rst  [5 blocks, 14 content lines after last, paragraph]
+  translations/zh_CN/usb/index.rst  [1 block, 24 content lines after last, paragraph]
+  translations/zh_CN/userspace-api/index.rst  [1 block, 13 content lines after last, paragraph]
+  translations/zh_CN/virt/index.rst  [1 block, 7 content lines after last, paragraph]
+  translations/zh_TW/admin-guide/index.rst  [3 blocks, 55 content lines after last, paragraph]
+  translations/zh_TW/admin-guide/mm/index.rst  [1 block, 15 content lines after last, paragraph]
+  translations/zh_TW/arch/index.rst  [1 block, 11 content lines after last, paragraph]
+  translations/zh_TW/arch/loongarch/index.rst  [1 block, 4 content lines after last, directive]
+  translations/zh_TW/arch/mips/index.rst  [1 block, 4 content lines after last, directive]
+  translations/zh_TW/arch/openrisc/index.rst  [1 block, 6 content lines after last, paragraph]
+  translations/zh_TW/arch/parisc/index.rst  [1 block, 6 content lines after last, paragraph]
+  translations/zh_TW/cpu-freq/index.rst  [1 block, 14 content lines after last, paragraph]
+  translations/zh_TW/dev-tools/index.rst  [1 block, 10 content lines after last, paragraph]
+  translations/zh_TW/index.rst  [4 blocks, 15 content lines after last, paragraph]
+  translations/zh_TW/process/development-process.rst  [1 block, 1 content line after last, paragraph]
+  translations/zh_TW/process/index.rst  [3 blocks, 4 content lines after last, directive]
+  userspace-api/media/cec/cec-api.rst  [1 block, 12 content lines after last, paragraph]
+  userspace-api/media/dvb/dvbapi.rst  [1 block, 38 content lines after last, paragraph]
+  userspace-api/media/index.rst  [1 block, 20 content lines after last, paragraph]
+  userspace-api/media/mediactl/media-controller.rst  [1 block, 16 content lines after last, paragraph]
+  userspace-api/media/rc/remote_controllers.rst  [1 block, 14 content lines after last, paragraph]
+  userspace-api/media/v4l/dev-subdev.rst  [1 block, 145 content lines after last, paragraph]
+  userspace-api/media/v4l/v4l2.rst  [1 block, 202 content lines after last, paragraph]
+  userspace-api/netlink/index.rst  [1 block, 3 content lines after last, paragraph]
+STRICT-ONLY (a COMMENT, not prose, sits in or after the trailing run) (0)
+
+:glob: blocks 7 in 7 files
+  bpf/maps.rst  [1 glob block]
+  bpf/programs.rst  [1 glob block]
+  input/devices/index.rst  [1 glob block]
+  netlink/specs/index.rst  [1 glob block]
+  trace/coresight/index.rst  [1 glob block]
+  trace/rv/index.rst  [1 glob block]
+  wmi/devices/index.rst  [1 glob block]
+
+multi-block carriers: 48; top 5 by block count
+  admin-guide/index.rst  ×11  (tail-to-EOF yes)
+      :caption: —   (3 entries)
+      :caption: —   (4 entries)
+      :caption: —   (3 entries)
+      :caption: —   (4 entries)
+      :caption: —   (18 entries)
+      :caption: —   (10 entries)
+      :caption: —   (3 entries)
+      :caption: —   (13 entries)
+      :caption: —   (23 entries)
+      :caption: —   (1 entries)
+      :caption: —   (2 entries)
+  translations/zh_CN/index.rst  ×9  (tail-to-EOF NO)
+      :caption: —   (1 entries)
+      :caption: —   (5 entries)
+      :caption: —   (4 entries)
+      :caption: —   (6 entries)
+      :caption: —   (4 entries)
+      :caption: —   (1 entries)
+      :caption: —   (1 entries)
+      :caption: —   (1 entries)
+      :caption: —   (1 entries)
+  core-api/index.rst  ×8  (tail-to-EOF yes)
+      :caption: —   (10 entries)
+      :caption: —   (22 entries)
+      :caption: —   (1 entries)
+      :caption: —   (6 entries)
+      :caption: —   (5 entries)
+      :caption: —   (14 entries)
+      :caption: —   (3 entries)
+      :caption: —   (3 entries)
+  index.rst  ×8  (tail-to-EOF NO)
+      :caption: —   (5 entries)
+      :caption: —   (4 entries)
+      :caption: —   (9 entries)
+      :caption: —   (5 entries)
+      :caption: —   (2 entries)
+      :caption: —   (1 entries)
+      :caption: —   (1 entries)
+      :caption: —   (1 entries)
+  i2c/index.rst  ×6  (tail-to-EOF yes)
+      :caption: —   (9 entries)
+      :caption: —   (5 entries)
+      :caption: —   (2 entries)
+      :caption: —   (3 entries)
+      :caption: —   (1 entries)
+      :caption: —   (1 entries)
+
+option frequency across 552 blocks
+  :maxdepth:        516   93.5%
+  :numbered:         34    6.2%
+  :titlesonly:        8    1.4%
+  :hidden:            3    0.5%
+  :caption:          38    6.9%
+  :name:              0    0.0%
+  :glob:              7    1.3%
+  (no option outside the known list)
+  values seen:
+    :maxdepth: 1×354, 2×147, 5×9, 3×5, 4×1
+    :numbered: (flag)×34
+    :titlesonly: (flag)×8
+    :hidden: (flag)×3
+    :caption: Table of Contents×13, Table of contents×5, Contents×4, 目录×3, Contents:×1, Overview×1 (+11 more)
+    :glob: (flag)×7
+
+entry shapes across 3944 entries
+  doc               3925   99.5%
+  glob                18    0.5%
+  external             1    0.0%
+  self                 0    0.0%
+  explicitTitle       85    2.2%
+  withSuffix          60    1.5%
+  absolute             0    0.0%
+
+SUMMARY	corpus	files	carriers	carrier%	blocks	entries	1block%	tailEOF%	midfile	globBlocks
+SUMMARY	linux	3989	417	10.5	552	3944	88.5	76.7	97	7

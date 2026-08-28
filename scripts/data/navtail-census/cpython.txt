@@ -1,0 +1,27 @@
+===== cpython =====
+root                 /private/tmp/claude-501/-Users-rogerwong-Projects-TOC-fable/ef25bf27-c496-4563-8269-439cae137141/scratchpad/corpora/cpython/Doc
+carriers             49
+toctree entries      528
+editable, STRICT     370  (70.1%)
+editable, SPAN       389  (73.7%)
+
+locked, and why
+  mid-file carriers      6
+  no-toctree             0
+  outside-region blocks  48 entries in 3 carriers
+
+MID-FILE FILE LIST (6)
+  extending/index.rst
+  howto/index.rst
+  library/asyncio.rst
+  library/email.rst
+  library/filesys.rst
+  library/python.rst
+
+OUTSIDE-REGION FILE LIST (3)
+  c-api/concrete.rst
+  library/concurrency.rst
+  whatsnew/index.rst
+
+SUMMARY	corpus	carriers	entries	strict	strict%	span	span%	midfile	outside
+SUMMARY	cpython	49	528	370	70.1	389	73.7	6	3

@@ -1,0 +1,7 @@
+# pnpm settings live HERE, not in package.json#pnpm — pnpm 10+ ignores the
+# latter.
+packages:
+  - "."
+
+allowBuilds:
+  esbuild: true

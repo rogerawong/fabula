@@ -1,0 +1,32 @@
+===== ansible =====
+root                 /Users/rogerwong/ansible-documentation/docs/docsite/rst
+carriers             46
+toctree entries      478
+editable, STRICT     335  (70.1%)
+editable, SPAN       335  (70.1%)
+
+locked, and why
+  mid-file carriers      13
+  no-toctree             0
+  outside-region blocks  33 entries in 1 carriers
+
+MID-FILE FILE LIST (13)
+  command_guide/index.rst
+  community/collection_contributors/collection_integration_tests.rst
+  community/contributions.rst
+  community/contributions_collections.rst
+  community/getting_started.rst
+  community/maintainers.rst
+  dev_guide/developing_collections.rst
+  dev_guide/developing_core.rst
+  dev_guide/style_guide/index.rst
+  dev_guide/testing.rst
+  network/user_guide/platform_index.rst
+  os_guide/intro_windows.rst
+  plugins/plugins.rst
+
+OUTSIDE-REGION FILE LIST (1)
+  dev_guide/testing/sanity/index.rst
+
+SUMMARY	corpus	carriers	entries	strict	strict%	span	span%	midfile	outside
+SUMMARY	ansible	46	478	335	70.1	335	70.1	13	1

@@ -1,0 +1,84 @@
+items:
+- name: Overview
+  href: index.md
+- name: Getting Started
+  href: getting-started/
+  expanded: true
+  items:
+  - name: Installation
+    href: getting-started/installation.md
+    items:
+    - href: getting-started/install-windows.md
+    - href: getting-started/install-macos.md
+    - href: getting-started/install-linux.md
+  - name: Quick Start
+    href: getting-started/quick-start.md
+  - name: Project Structure
+    href: getting-started/project-structure.md
+  - name: Configuration
+    href: getting-started/configuration.md
+    items:
+    - name: Config File Reference
+      href: getting-started/config-reference.md
+    - name: Environment Variables
+      href: getting-started/env-vars.md
+- name: Guides
+  items:
+  - name: Writing Content
+    href: guides/writing-content.md
+    items:
+    - name: Markdown Syntax
+      href: guides/markdown.md
+    - name: Code Snippets
+      href: guides/code-snippets.md
+    - name: Diagrams
+      href: guides/diagrams.md
+  - name: Organizing Docs
+    href: guides/organizing.md
+    items:
+    - name: Table of Contents
+      href: guides/toc.md
+    - name: Cross References
+      href: guides/xref.md
+  - name: Versioning
+    href: guides/versioning.md
+  - name: Localization
+    href: guides/localization.md
+- name: Tutorials
+  href: tutorials/
+  items:
+  - name: Build Your First Site
+    href: tutorials/first-site.md
+  - name: Customize the Theme
+    href: tutorials/custom-theme.md
+  - name: Publish to GitHub Pages
+    href: tutorials/publish-gh-pages.md
+  - name: Continuous Deployment
+    href: tutorials/ci-cd.md
+- name: API Reference
+  uid: api.index
+  items:
+  - name: Core
+    uid: api.core
+    items:
+    - uid: api.core.builder
+    - uid: api.core.parser
+    - uid: api.core.renderer
+  - name: Plugins
+    uid: api.plugins
+    items:
+    - uid: api.plugins.search
+    - uid: api.plugins.sitemap
+- name: Extensibility
+  items:
+  - name: Plugin Development
+    href: extensibility/plugins.md
+  - name: Custom Templates
+    href: extensibility/templates.md
+  - name: Reference TOCs
+    href: extensibility/nested/toc.yml
+- name: FAQ
+  href: faq.md
+- name: Release Notes
+  href: release-notes.md
+  order: 200

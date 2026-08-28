@@ -1,0 +1,21 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Tabs Rooted",
+  "colors": { "primary": "#16A34A" },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guides",
+        "groups": [
+          { "group": "Getting Started", "pages": ["guides/intro", "guides/install"] },
+          { "group": "Advanced", "pages": ["guides/deep"] }
+        ]
+      },
+      {
+        "tab": "Reference",
+        "groups": [{ "group": "API", "pages": ["reference/api"] }]
+      }
+    ]
+  }
+}

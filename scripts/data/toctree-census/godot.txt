@@ -1,0 +1,106 @@
+===== godot =====
+root                 /Users/rogerwong/godot-docs
+.rst files           1596
+carriers             63  (3.9% of files)
+toctree blocks       103
+toctree entries      1703
+loose `.. toctree::` markers 103 vs 103 blocks scanned  (no gap)
+
+blocks per carrier
+  n  carriers   %
+   1        50   79.4
+   2         4    6.3
+   3         1    1.6
+   4         3    4.8
+   5         1    1.6
+   6         3    4.8
+   7         1    1.6
+  exactly one block: 50/63 = 79.4%
+
+the nav tail
+  tail-to-EOF (comments inert — PRIMARY)  54/63 = 85.7%
+  tail-to-EOF (strict, comments count as content)  54/63 = 85.7%
+  MID-FILE carriers (content after the last block)  9
+      trailing paragraph     6   bare text or a section heading
+      trailing directive     1   a rendering directive (.. seealso::, .. note::) — the reader sees it
+      trailing invisible     2   labels + substitution definitions only — nothing renders there
+  MID-FILE under the strict rule                   9
+  trailing-run length: 1×62 6×1
+
+MID-FILE FILE LIST (9)
+  engine_details/development/configuring_an_ide/index.rst  [1 block, 9 content lines after last, paragraph]
+  engine_details/development/debugging/index.rst  [1 block, 22 content lines after last, paragraph]
+  engine_details/development/profiling/index.rst  [1 block, 68 content lines after last, paragraph]
+  getting_started/first_2d_game/index.rst  [1 block, 1 content line after last, invisible]
+  getting_started/first_3d_game/index.rst  [1 block, 1 content line after last, invisible]
+  tutorials/3d/procedural_geometry/index.rst  [1 block, 92 content lines after last, paragraph]
+  tutorials/animation/index.rst  [1 block, 1 content line after last, paragraph]
+  tutorials/assets_pipeline/importing_3d_scenes/index.rst  [1 block, 4 content lines after last, directive]
+  tutorials/scripting/c_sharp/index.rst  [2 blocks, 18 content lines after last, paragraph]
+STRICT-ONLY (a COMMENT, not prose, sits in or after the trailing run) (0)
+
+:glob: blocks 0 in 0 files
+
+multi-block carriers: 13; top 5 by block count
+  tutorials/xr/index.rst  ×7  (tail-to-EOF yes)
+      :caption: —   (1 entries)
+      :caption: —   (3 entries)
+      :caption: —   (9 entries)
+      :caption: —   (1 entries)
+      :caption: —   (4 entries)
+      :caption: —   (2 entries)
+      :caption: —   (2 entries)
+  classes/index.rst  ×6  (tail-to-EOF yes)
+      :caption: —   (2 entries)
+      :caption: —   (284 entries)
+      :caption: —   (418 entries)
+      :caption: —   (338 entries)
+      :caption: —   (82 entries)
+      :caption: —   (39 entries)
+  index.rst  ×6  (tail-to-EOF yes)
+      :caption: About   (7 entries)
+      :caption: Getting started   (4 entries)
+      :caption: Manual   (25 entries)
+      :caption: Engine details   (6 entries)
+      :caption: Community   (4 entries)
+      :caption: Class reference   (1 entries)
+  tutorials/editor/index.rst  ×6  (tail-to-EOF yes)
+      :caption: —   (6 entries)
+      :caption: —   (1 entries)
+      :caption: —   (1 entries)
+      :caption: —   (1 entries)
+      :caption: —   (3 entries)
+      :caption: —   (1 entries)
+  tutorials/performance/index.rst  ×5  (tail-to-EOF yes)
+      :caption: —   (2 entries)
+      :caption: —   (1 entries)
+      :caption: —   (3 entries)
+      :caption: —   (2 entries)
+      :caption: —   (2 entries)
+
+option frequency across 103 blocks
+  :maxdepth:        103  100.0%
+  :numbered:          0    0.0%
+  :titlesonly:        0    0.0%
+  :hidden:            6    5.8%
+  :caption:           6    5.8%
+  :name:            103  100.0%
+  :glob:              0    0.0%
+  (no option outside the known list)
+  values seen:
+    :maxdepth: 1×103
+    :hidden: (flag)×6
+    :caption: About×1, Getting started×1, Manual×1, Engine details×1, Community×1, Class reference×1
+    :name: toc-learn-features-3d-optimization×2, toc-class-ref-globals×1, toc-class-ref-nodes×1, toc-class-ref-resources×1, toc-class-ref-objects×1, toc-class-ref-editors×1 (+96 more)
+
+entry shapes across 1703 entries
+  doc               1703  100.0%
+  glob                 0    0.0%
+  external             0    0.0%
+  self                 0    0.0%
+  explicitTitle        0    0.0%
+  withSuffix           0    0.0%
+  absolute             0    0.0%
+
+SUMMARY	corpus	files	carriers	carrier%	blocks	entries	1block%	tailEOF%	midfile	globBlocks
+SUMMARY	godot	1596	63	3.9	103	1703	79.4	85.7	9	0

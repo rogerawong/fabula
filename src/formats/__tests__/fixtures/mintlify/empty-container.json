@@ -1,0 +1,26 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Bearing but empty",
+  "_comment": "Ours, not vendored. A tab that legally bears sections and holds none — the shape that killed deriving `accepts` from a container's own cards (docs/13 v2). It must round-trip, declare a container, render a lane, and take the first card dropped into it.",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Get started",
+            "pages": [
+              "index",
+              "quickstart"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Reference",
+        "groups": []
+      }
+    ]
+  }
+}

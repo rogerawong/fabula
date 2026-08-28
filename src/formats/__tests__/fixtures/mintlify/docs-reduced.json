@@ -1,0 +1,272 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "luma",
+  "name": "Mintlify",
+  "description": "Mintlify is a platform for building and hosting documentation websites. It provides a set of tools and services for maintaining documentation and making it accessible to AI agents.",
+  "colors": {
+    "primary": "#166E3F",
+    "light": "#26BD6C",
+    "dark": "#166E3F"
+  },
+  "favicon": {
+    "light": "/favicon.ico",
+    "dark": "/favicon.ico"
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "interaction": {
+    "drilldown": false
+  },
+  "navigation": {
+    "languages": [
+      {
+        "tabs": [
+          {
+            "tab": "Documentation",
+            "groups": [
+              {
+                "group": "Get started",
+                "boost": 2,
+                "pages": [
+                  "index",
+                  "quickstart",
+                  "ai-native",
+                  {
+                    "group": "CLI",
+                    "root": "cli/index",
+                    "pages": [
+                      "cli/install",
+                      "cli/preview",
+                      "cli/commands"
+                    ]
+                  },
+                  "migration"
+                ]
+              },
+              {
+                "group": "Create content",
+                "pages": [
+                  {
+                    "group": "Pages",
+                    "pages": [
+                      "organize/pages",
+                      "organize/hidden-pages",
+                      "organize/related-pages"
+                    ]
+                  },
+                  "create/reusable-snippets",
+                  "create/personalization",
+                  "deploy/ci"
+                ]
+              },
+              {
+                "group": "Manage your site",
+                "pages": [
+                  {
+                    "group": "Global settings",
+                    "root": "organize/settings",
+                    "pages": [
+                      "organize/settings-appearance",
+                      "organize/settings-structure",
+                      "organize/settings-api"
+                    ]
+                  },
+                  "organize/navigation",
+                  "ai/contextual-menu",
+                  "create/redirects",
+                  "organize/mintignore"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "API reference",
+            "groups": [
+              {
+                "group": "API reference",
+                "pages": [
+                  "api/introduction"
+                ]
+              },
+              {
+                "group": "Admin",
+                "pages": [
+                  "api/update/trigger",
+                  "api/update/status",
+                  "api/preview/trigger",
+                  "api/automations/trigger"
+                ]
+              },
+              {
+                "group": "Agent",
+                "pages": [
+                  "api/agent/v2/create-agent-job",
+                  "api/agent/v2/get-agent-job",
+                  "api/agent/v2/send-message"
+                ]
+              }
+            ]
+          }
+        ],
+        "language": "en"
+      },
+      {
+        "$ref": "./fr.json"
+      },
+      {
+        "$ref": "./es.json"
+      },
+      {
+        "$ref": "./zh.json"
+      }
+    ]
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg",
+    "href": "https://mintlify.com/docs"
+  },
+  "api": {
+    "mdx": {
+      "auth": {
+        "method": "bearer"
+      }
+    }
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Get started",
+      "href": "https://mintlify.com/start"
+    },
+    "links": [
+      {
+        "label": "Talk to us",
+        "href": "https://mintlify.com/contact/sales"
+      }
+    ]
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/mintlify",
+      "linkedin": "https://www.linkedin.com/company/mintlify",
+      "github": "https://github.com/mintlify"
+    },
+    "links": [
+      {
+        "header": "Explore",
+        "items": [
+          {
+            "label": "Startups",
+            "href": "https://www.mintlify.com/startups"
+          },
+          {
+            "label": "Enterprise",
+            "href": "https://www.mintlify.com/enterprise"
+          },
+          {
+            "label": "Switch",
+            "href": "https://www.mintlify.com/switch"
+          }
+        ]
+      },
+      {
+        "header": "Resources",
+        "items": [
+          {
+            "label": "Learn",
+            "href": "https://learn.mintlify.com/"
+          },
+          {
+            "label": "Customers",
+            "href": "https://mintlify.com/customers"
+          },
+          {
+            "label": "Blog",
+            "href": "https://mintlify.com/blog"
+          },
+          {
+            "label": "Pricing",
+            "href": "https://www.mintlify.com/pricing"
+          },
+          {
+            "label": "Contact support",
+            "href": "https://www.mintlify.com/docs/contact-support"
+          },
+          {
+            "label": "Feature requests",
+            "href": "https://github.com/orgs/mintlify/discussions/categories/feature-requests"
+          },
+          {
+            "label": "Status",
+            "href": "https://www.mintlify.com/docs/status"
+          }
+        ]
+      },
+      {
+        "header": "Company",
+        "items": [
+          {
+            "label": "Careers",
+            "href": "https://mintlify.com/careers"
+          },
+          {
+            "label": "Wall of love",
+            "href": "https://www.mintlify.com/wall-of-love"
+          }
+        ]
+      },
+      {
+        "header": "Legal",
+        "items": [
+          {
+            "label": "Privacy policy",
+            "href": "https://mintlify.com/legal/privacy"
+          },
+          {
+            "label": "Terms of Service",
+            "href": "https://mintlify.com/legal/terms"
+          },
+          {
+            "label": "Security",
+            "href": "https://security.mintlify.com/?_gl=1*ascm4x*_gcl_au*NTU1ODkzNjQ0LjE3NTQ5Mjg4NzIuMTgzMDQ5NTExMS4xNzU3NTQwMDk1LjE3NTc1NDAwOTQ."
+          }
+        ]
+      }
+    ]
+  },
+  "thumbnails": {
+    "background": "/images/thumbnail/background.svg"
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "download-spec",
+      "chatgpt",
+      "claude",
+      "add-mcp",
+      "cursor",
+      "vscode"
+    ]
+  },
+  "redirects": {
+    "$ref": "./redirects.json"
+  },
+  "integrations": {
+    "ga4": {
+      "measurementId": "G-RCYWHL7EQ7"
+    },
+    "posthog": {
+      "apiKey": "phc_eNuN6Ojnk9O7uWfC17z12AK85fNR0BY6IiGVy0Gfwzw"
+    }
+  },
+  "seo": {
+    "metatags": {
+      "canonical": "https://www.mintlify.com/docs",
+      "google-site-verification": "YRuJgIxsRnMkiRTYTo_tEsJSFyIE3AraEiukTbeV4Ag",
+      "og:locale": "en_US",
+      "twitter:site": "@mintlify"
+    }
+  }
+}

@@ -1,0 +1,130 @@
+===== kernel =====
+root                 /Users/rogerwong/linux-docs/Documentation
+carriers             417
+toctree entries      3944
+editable, STRICT     2862  (72.6%)
+editable, SPAN       3003  (76.1%)
+
+locked, and why
+  mid-file carriers      97
+  no-toctree             0
+  outside-region blocks  302 entries in 15 carriers
+
+MID-FILE FILE LIST (97)
+  admin-guide/media/index.rst
+  arch/sh/index.rst
+  bpf/index.rst
+  bpf/libbpf/index.rst
+  bpf/maps.rst
+  bpf/programs.rst
+  bpf/standardization/index.rst
+  core-api/kho/index.rst
+  core-api/liveupdate.rst
+  cpu-freq/index.rst
+  dev-tools/kselftest.rst
+  dev-tools/kunit/api/index.rst
+  dev-tools/kunit/index.rst
+  driver-api/cxl/platform/acpi.rst
+  driver-api/gpio/index.rst
+  driver-api/media/index.rst
+  driver-api/pldmfw/index.rst
+  driver-api/surface_aggregator/client.rst
+  driver-api/surface_aggregator/internal.rst
+  hid/hidintro.rst
+  index.rst
+  mm/damon/design.rst
+  mm/damon/index.rst
+  mm/process_addrs.rst
+  process/debugging/index.rst
+  rust/index.rst
+  trace/index.rst
+  translations/index.rst
+  translations/it_IT/RCU/index.rst
+  translations/it_IT/core-api/index.rst
+  translations/it_IT/doc-guide/index.rst
+  translations/it_IT/i2c/index.rst
+  translations/it_IT/index.rst
+  translations/it_IT/locking/index.rst
+  translations/it_IT/process/index.rst
+  translations/ja_JP/index.rst
+  translations/ko_KR/index.rst
+  translations/zh_CN/PCI/index.rst
+  translations/zh_CN/accounting/index.rst
+  translations/zh_CN/admin-guide/index.rst
+  translations/zh_CN/admin-guide/mm/index.rst
+  translations/zh_CN/arch/index.rst
+  translations/zh_CN/arch/loongarch/index.rst
+  translations/zh_CN/arch/mips/index.rst
+  translations/zh_CN/arch/openrisc/index.rst
+  translations/zh_CN/arch/parisc/index.rst
+  translations/zh_CN/arch/riscv/index.rst
+  translations/zh_CN/block/index.rst
+  translations/zh_CN/core-api/index.rst
+  translations/zh_CN/cpu-freq/index.rst
+  translations/zh_CN/dev-tools/index.rst
+  translations/zh_CN/devicetree/index.rst
+  translations/zh_CN/doc-guide/index.rst
+  translations/zh_CN/driver-api/gpio/index.rst
+  translations/zh_CN/driver-api/index.rst
+  translations/zh_CN/driver-api/phy/index.rst
+  translations/zh_CN/index.rst
+  translations/zh_CN/infiniband/index.rst
+  translations/zh_CN/kbuild/index.rst
+  translations/zh_CN/kernel-hacking/index.rst
+  translations/zh_CN/locking/index.rst
+  translations/zh_CN/mm/index.rst
+  translations/zh_CN/networking/index.rst
+  translations/zh_CN/peci/index.rst
+  translations/zh_CN/power/index.rst
+  translations/zh_CN/process/index.rst
+  translations/zh_CN/rust/index.rst
+  translations/zh_CN/scheduler/index.rst
+  translations/zh_CN/scsi/index.rst
+  translations/zh_CN/security/index.rst
+  translations/zh_CN/security/keys/index.rst
+  translations/zh_CN/sound/index.rst
+  translations/zh_CN/staging/index.rst
+  translations/zh_CN/subsystem-apis.rst
+  translations/zh_CN/usb/index.rst
+  translations/zh_CN/userspace-api/index.rst
+  translations/zh_CN/virt/index.rst
+  translations/zh_TW/admin-guide/index.rst
+  translations/zh_TW/admin-guide/mm/index.rst
+  translations/zh_TW/arch/index.rst
+  translations/zh_TW/arch/loongarch/index.rst
+  translations/zh_TW/arch/mips/index.rst
+  translations/zh_TW/arch/openrisc/index.rst
+  translations/zh_TW/arch/parisc/index.rst
+  translations/zh_TW/cpu-freq/index.rst
+  translations/zh_TW/dev-tools/index.rst
+  translations/zh_TW/index.rst
+  translations/zh_TW/process/development-process.rst
+  translations/zh_TW/process/index.rst
+  userspace-api/media/cec/cec-api.rst
+  userspace-api/media/dvb/dvbapi.rst
+  userspace-api/media/index.rst
+  userspace-api/media/mediactl/media-controller.rst
+  userspace-api/media/rc/remote_controllers.rst
+  userspace-api/media/v4l/dev-subdev.rst
+  userspace-api/media/v4l/v4l2.rst
+  userspace-api/netlink/index.rst
+
+OUTSIDE-REGION FILE LIST (15)
+  admin-guide/index.rst
+  core-api/index.rst
+  driver-api/dmaengine/index.rst
+  driver-api/index.rst
+  driver-api/tty/index.rst
+  filesystems/index.rst
+  gpu/nova/index.rst
+  mm/index.rst
+  networking/devlink/index.rst
+  process/index.rst
+  subsystem-apis.rst
+  translations/zh_CN/filesystems/index.rst
+  userspace-api/gpio/chardev.rst
+  userspace-api/gpio/chardev_v1.rst
+  userspace-api/media/dvb/frontend_legacy_api.rst
+
+SUMMARY	corpus	carriers	entries	strict	strict%	span	span%	midfile	outside
+SUMMARY	kernel	417	3944	2862	72.6	3003	76.1	97	15

@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      # The Mintlify schema oracle is fetched, never vendored (license
+      # undetermined — see the README beside it). Non-fatal: if the
+      # fetch fails, the schema plank SKIPS WITH ITS REASON and the run
+      # stays green — so a green CI does not by itself prove the plank
+      # ran; the skip line in the test output is the tell.
+      - run: pnpm fetch-mintlify-schema || echo "::warning::Mintlify schema fetch failed — the schema plank will skip"
+      - run: pnpm check
+      - run: pnpm lint
+      - run: pnpm format:check
+      - run: pnpm test
+      - run: pnpm build
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm e2e

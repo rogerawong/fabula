@@ -1,0 +1,20 @@
+# MkDocs config: nav sandwiched between other settings, bare paths,
+# nested subsections, leaf entries at the top level.
+site_name: Widget Docs
+site_description: Documentation for Widget
+theme:
+  name: readthedocs
+nav:
+  - Home: index.md
+  - about.md
+  - Guide:
+      - guide/index.md
+      - Setup: guide/setup.md
+      - Advanced:
+          - Tuning: guide/advanced/tuning.md
+          - guide/advanced/internals.md
+  - FAQ: faq.md
+extra_css:
+  - css/custom.css
+plugins:
+  - search

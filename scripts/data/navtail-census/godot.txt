@@ -1,0 +1,34 @@
+===== godot =====
+root                 /Users/rogerwong/godot-docs
+carriers             63
+toctree entries      1703
+editable, STRICT     404  (23.7%)
+editable, SPAN       1597  (93.8%)
+
+locked, and why
+  mid-file carriers      9
+  no-toctree             0
+  outside-region blocks  46 entries in 7 carriers
+
+MID-FILE FILE LIST (9)
+  engine_details/development/configuring_an_ide/index.rst
+  engine_details/development/debugging/index.rst
+  engine_details/development/profiling/index.rst
+  getting_started/first_2d_game/index.rst
+  getting_started/first_3d_game/index.rst
+  tutorials/3d/procedural_geometry/index.rst
+  tutorials/animation/index.rst
+  tutorials/assets_pipeline/importing_3d_scenes/index.rst
+  tutorials/scripting/c_sharp/index.rst
+
+OUTSIDE-REGION FILE LIST (7)
+  engine_details/development/compiling/index.rst
+  tutorials/2d/index.rst
+  tutorials/3d/index.rst
+  tutorials/3d/particles/index.rst
+  tutorials/editor/index.rst
+  tutorials/scripting/index.rst
+  tutorials/ui/index.rst
+
+SUMMARY	corpus	carriers	entries	strict	strict%	span	span%	midfile	outside
+SUMMARY	godot	63	1703	404	23.7	1597	93.8	9	7

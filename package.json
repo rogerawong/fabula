@@ -1,0 +1,72 @@
+{
+  "name": "fabula",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogerawong/fabula.git"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "e2e": "playwright test",
+    "fixpoint": "vite-node scripts/fixpoint.ts",
+    "paint-check": "vite-node scripts/paint-check.ts",
+    "paint-glyphs": "vite-node scripts/paint-glyphs.ts",
+    "mock-provider": "vite-node scripts/mock-provider.ts",
+    "receipt-stream": "vite-node scripts/receipt-stream.ts",
+    "measure-constraint-cost": "vite-node scripts/measure-constraint-cost.ts",
+    "receipt-constraints": "vite-node scripts/receipt-constraints.ts",
+    "receipt-aspirational": "vite-node scripts/receipt-aspirational.ts",
+    "fetch-mintlify-schema": "curl -sSL -o src/formats/__tests__/fixtures/mintlify/schema/docs.schema.json https://mintlify.com/docs.json"
+  },
+  "dependencies": {
+    "@codemirror/lang-yaml": "^6.1.3",
+    "@codemirror/language": "^6.12.4",
+    "@codemirror/state": "^6.7.1",
+    "@codemirror/view": "^6.43.6",
+    "@fontsource-variable/inter": "^5.2.8",
+    "@fontsource-variable/jetbrains-mono": "^5.2.8",
+    "immer": "^10.1.3",
+    "js-yaml": "^4.1.0",
+    "lucide-react": "^1.25.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "sonner": "^2.0.7",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@playwright/test": "^1.61.1",
+    "@tailwindcss/vite": "^4.1.14",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "eslint": "^9.37.0",
+    "eslint-plugin-react-hooks": "^6.1.0",
+    "fast-check": "^4.3.0",
+    "prettier": "^3.6.0",
+    "tailwindcss": "^4.1.14",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.0",
+    "vite": "^7.1.0",
+    "vite-node": "^3.2.4",
+    "vitest": "^3.2.4"
+  }
+}

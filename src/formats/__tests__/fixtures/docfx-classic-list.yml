@@ -1,0 +1,20 @@
+# Classic DocFX toc.yml: bare list root (no `items:` wrapper),
+# name-less nodes, uid-only nodes, misc extra properties.
+- name: Introduction
+  href: intro.md
+- name: Setup
+  href: setup/
+  expanded: true
+  items:
+  - href: setup/prerequisites.md
+  - href: setup/install-guide.md
+  - name: Troubleshooting
+    href: setup/troubleshooting.md
+    displayName: setup errors install problems
+- uid: Reference.Root
+  items:
+  - uid: Reference.ClassA
+  - uid: Reference.ClassB
+    order: 50
+- name: External TOC
+  href: shared/toc.yml

@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+
+# Environment
+.env
+.env.*
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Logs & caches
+*.log
+.eslintcache
+*.tsbuildinfo
+coverage/
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+# MCP browser sessions drop snapshots/console logs here; the .yml ones
+# otherwise fail `prettier --check .`
+.playwright-mcp/
+
+# Claude Code personal settings
+.claude/settings.local.json
+
+# Corpus paint-check captures (pnpm paint-check)
+.paint-check/
+
+# Mintlify schema oracle — fetched, never vendored (license
+# undetermined; ruling 2026-08-27 in the README beside it). Run
+# `pnpm fetch-mintlify-schema` to get it; the plank test skips without it.
+src/formats/__tests__/fixtures/mintlify/schema/docs.schema.json

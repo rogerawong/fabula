@@ -1,0 +1,128 @@
+===== blender =====
+root                 /private/tmp/claude-501/-Users-rogerwong-Projects-TOC-fable/ef25bf27-c496-4563-8269-439cae137141/scratchpad/corpora/blender/manual
+.rst files           2374
+carriers             372  (15.7% of files)
+toctree blocks       525
+toctree entries      2354
+loose `.. toctree::` markers 525 vs 525 blocks scanned  (no gap)
+
+blocks per carrier
+  n  carriers   %
+   1       300   80.6
+   2        33    8.9
+   3        20    5.4
+   4         9    2.4
+   5         2    0.5
+   6         5    1.3
+   7         1    0.3
+   8         2    0.5
+  exactly one block: 300/372 = 80.6%
+
+the nav tail
+  tail-to-EOF (comments inert — PRIMARY)  353/372 = 94.9%
+  tail-to-EOF (strict, comments count as content)  353/372 = 94.9%
+  MID-FILE carriers (content after the last block)  19
+      trailing paragraph    15   bare text or a section heading
+      trailing directive     4   a rendering directive (.. seealso::, .. note::) — the reader sees it
+      trailing invisible     0   labels + substitution definitions only — nothing renders there
+  MID-FILE under the strict rule                   19
+  trailing-run length: 1×369 2×2 7×1
+
+MID-FILE FILE LIST (19)
+  addons/rigify/index.rst  [3 blocks, 13 content lines after last, paragraph]
+  advanced/extensions/index.rst  [1 block, 7 content lines after last, directive]
+  contribute/manual/getting_started/index.rst  [1 block, 22 content lines after last, paragraph]
+  contribute/manual/guides/markup_guide.rst  [1 block, 112 content lines after last, paragraph]
+  contribute/manual/index.rst  [2 blocks, 14 content lines after last, paragraph]
+  contribute/translate_manual/index.rst  [2 blocks, 1 content line after last, paragraph]
+  editors/3dview/toolbar/index.rst  [1 block, 23 content lines after last, paragraph]
+  files/import_export/index.rst  [1 block, 3 content lines after last, directive]
+  getting_started/configuration/index.rst  [1 block, 2 content lines after last, directive]
+  grease_pencil/materials/index.rst  [1 block, 6 content lines after last, paragraph]
+  grease_pencil/modes/index.rst  [6 blocks, 2 content lines after last, paragraph]
+  interface/controls/nodes/types/utilities/bundles/index.rst  [4 blocks, 43 content lines after last, paragraph]
+  interface/controls/nodes/types/utilities/closure/index.rst  [1 block, 24 content lines after last, paragraph]
+  interface/keymap/index.rst  [1 block, 4 content lines after last, paragraph]
+  modeling/geometry_nodes/index.rst  [8 blocks, 5 content lines after last, directive]
+  modeling/meshes/primitives.rst  [1 block, 166 content lines after last, paragraph]
+  render/render_engines.rst  [1 block, 43 content lines after last, paragraph]
+  video_editing/edit/montage/strips/effects/index.rst  [3 blocks, 27 content lines after last, paragraph]
+  video_editing/edit/montage/strips/transitions/index.rst  [1 block, 23 content lines after last, paragraph]
+STRICT-ONLY (a COMMENT, not prose, sits in or after the trailing run) (0)
+
+:glob: blocks 4 in 4 files
+  render/freestyle/view_layer/line_style/modifiers/alpha/index.rst  [1 glob block]
+  render/freestyle/view_layer/line_style/modifiers/color/index.rst  [1 glob block]
+  render/freestyle/view_layer/line_style/modifiers/geometry/index.rst  [1 glob block]
+  render/freestyle/view_layer/line_style/modifiers/thickness/index.rst  [1 glob block]
+
+multi-block carriers: 72; top 5 by block count
+  editors/preferences/index.rst  ×8  (tail-to-EOF yes)
+      :caption: —   (1 entries)
+      :caption: —   (5 entries)
+      :caption: —   (1 entries)
+      :caption: —   (2 entries)
+      :caption: —   (1 entries)
+      :caption: —   (3 entries)
+      :caption: —   (3 entries)
+      :caption: —   (2 entries)
+  modeling/geometry_nodes/index.rst  ×8  (tail-to-EOF NO)
+      :caption: —   (9 entries)
+      :caption: —   (2 entries)
+      :caption: —   (2 entries)
+      :caption: —   (6 entries)
+      :caption: —   (1 entries)
+      :caption: —   (3 entries)
+      :caption: —   (1 entries)
+      :caption: —   (3 entries)
+  compositing/types/index.rst  ×7  (tail-to-EOF yes)
+      :caption: —   (2 entries)
+      :caption: —   (3 entries)
+      :caption: —   (2 entries)
+      :caption: —   (1 entries)
+      :caption: —   (3 entries)
+      :caption: —   (1 entries)
+      :caption: —   (2 entries)
+  compositing/types/color/index.rst  ×6  (tail-to-EOF yes)
+      :caption: —   (1 entries)
+      :caption: —   (3 entries)
+      :caption: —   (2 entries)
+      :caption: —   (2 entries)
+      :caption: —   (4 entries)
+      :caption: —   (2 entries)
+  compositing/types/utilities/index.rst  ×6  (tail-to-EOF yes)
+      :caption: —   (3 entries)
+      :caption: —   (2 entries)
+      :caption: —   (3 entries)
+      :caption: —   (5 entries)
+      :caption: —   (1 entries)
+      :caption: —   (1 entries)
+
+option frequency across 525 blocks
+  :maxdepth:        505   96.2%
+  :numbered:          0    0.0%
+  :titlesonly:       28    5.3%
+  :hidden:           18    3.4%
+  :caption:           3    0.6%
+  :name:              0    0.0%
+  :glob:              4    0.8%
+  :class: ★           8    1.5%  ← NOT in the known list
+  values seen:
+    :maxdepth: 2×251, 1×239, 3×15
+    :titlesonly: (flag)×28
+    :hidden: (flag)×18
+    :caption: Getting Started×1, Sections×1, Get Involved×1
+    :glob: (flag)×4
+    :class: toc-list×8
+
+entry shapes across 2354 entries
+  doc               2350   99.8%
+  glob                 4    0.2%
+  external             0    0.0%
+  self                 0    0.0%
+  explicitTitle      212    9.0%
+  withSuffix        2347   99.7%
+  absolute            23    1.0%
+
+SUMMARY	corpus	files	carriers	carrier%	blocks	entries	1block%	tailEOF%	midfile	globBlocks
+SUMMARY	blender	2374	372	15.7	525	2354	80.6	94.9	19	4

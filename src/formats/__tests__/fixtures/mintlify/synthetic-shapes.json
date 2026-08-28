@@ -1,0 +1,47 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Synthetic shapes",
+  "_comment": "Ours, not vendored. Carries the navigation entry shapes that neither mintlify/docs nor mintlify/starter contains, so they are never claimed as corpus-covered. See docs/13.",
+  "colors": {
+    "primary": "#0D9373"
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Mixed entry shapes",
+            "pages": [
+              "index",
+              {
+                "openapi": "/openapi.json"
+              },
+              {
+                "openapi": {
+                  "source": "/admin-openapi.json",
+                  "directory": "api-reference/admin"
+                }
+              },
+              {
+                "asyncapi": "/asyncapi.yaml"
+              },
+              {
+                "href": "https://status.example.org",
+                "icon": "signal"
+              },
+              {
+                "page": "guides/advanced",
+                "icon": "rocket"
+              },
+              {
+                "unrecognised-future-key": "value-we-must-round-trip"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

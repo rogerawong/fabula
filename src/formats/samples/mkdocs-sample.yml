@@ -1,0 +1,41 @@
+site_name: Fable Docs
+site_url: https://docs.example.com
+repo_url: https://github.com/example/fable-docs
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - search.highlight
+nav:
+  - Home: index.md
+  - getting-started.md
+  - User Guide:
+      - user-guide/index.md
+      - Installation: user-guide/installation.md
+      - Configuration:
+          - Basics: user-guide/config/basics.md
+          - user-guide/config/advanced.md
+          - Environment: user-guide/config/environment.md
+      - Deployment: user-guide/deployment.md
+  - Tutorials:
+      - Your First Project: tutorials/first-project.md
+      - Custom Themes: tutorials/custom-themes.md
+      - Publishing: tutorials/publishing.md
+  - Reference:
+      - reference/index.md
+      - CLI: reference/cli.md
+      - Configuration File: reference/config-file.md
+      - Plugin API:
+          - Hooks: reference/plugins/hooks.md
+          - Events: reference/plugins/events.md
+  - Community:
+      - Contributing: community/contributing.md
+      - Code of Conduct: community/code-of-conduct.md
+  - changelog.md
+plugins:
+  - search
+  - tags
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
